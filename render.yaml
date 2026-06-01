@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: whatsapp-bot
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node index.js"
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: "3000"
+    disk:
+      name: whatsapp-session
+      mountPath: /data
+      sizeGB: 1
