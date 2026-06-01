@@ -7,9 +7,9 @@
   "postinstall": "npx puppeteer browsers install chrome@146.0.7680.31"
   },
   "dependencies": {
-    "express": "^5.2.1",
-    "puppeteer": "^24.43.1",
-    "qrcode-terminal": "^0.12.0",
-    "whatsapp-web.js": "^1.34.1"
+  "puppeteer": "21.6.1",
+  "whatsapp-web.js": "^1.34.1",
+  "express": "^5.2.1",
+  "qrcode-terminal": "^0.12.0"
   }
 }
