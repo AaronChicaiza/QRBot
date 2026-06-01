@@ -1,23 +1,19 @@
-const { Client } = require("whatsapp-web.js");
-const qrcode = require("qrcode-terminal");
-const fs = require("fs");
-const express = require("express");
+const puppeteer = require('puppeteer'); // importa puppeteer completo
+const { Client } = require('whatsapp-web.js');
+const qrcode = require('qrcode-terminal');
+const fs = require('fs');
+const express = require('express');
 
-// ===============================
-// ARCHIVO DE SESIÓN EN DISCO PERSISTENTE
-// ===============================
 const SESSION_FILE_PATH = "/data/session.json";
 let sessionData;
 if (fs.existsSync(SESSION_FILE_PATH)) {
     sessionData = require(SESSION_FILE_PATH);
 }
 
-// ===============================
-// CLIENTE WHATSAPP
-// ===============================
 const client = new Client({
     session: sessionData,
     puppeteer: {
+        executablePath: puppeteer.executablePath(), // usa el Chromium descargado
         headless: true,
         args: [
             "--no-sandbox",
@@ -30,6 +26,7 @@ const client = new Client({
         ]
     }
 });
+
 
 // ===============================
 // ESTADOS DE USUARIOS
