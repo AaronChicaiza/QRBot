@@ -15,7 +15,20 @@ if (fs.existsSync(SESSION_FILE_PATH)) {
 // CLIENTE WHATSAPP
 // ===============================
 const client = new Client({
-    session: sessionData
+    session: sessionData,
+    puppeteer: {
+        headless: true,
+        executablePath: process.env.PUPPETEER_EXECUTABLE_PATH,
+        args: [
+            "--no-sandbox",
+            "--disable-setuid-sandbox",
+            "--disable-dev-shm-usage",
+            "--disable-gpu",
+            "--no-first-run",
+            "--no-zygote",
+            "--single-process"
+        ]
+    }
 });
 
 // ===============================
