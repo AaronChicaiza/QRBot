@@ -1,6 +1,7 @@
 const { Client } = require("whatsapp-web.js");
 const qrcode = require("qrcode-terminal");
 const fs = require("fs");
+const express = require("express");
 
 // ===============================
 // ARCHIVO DE SESIÓN EN DISCO PERSISTENTE
@@ -18,7 +19,6 @@ const client = new Client({
     session: sessionData,
     puppeteer: {
         headless: true,
-        executablePath: process.env.PUPPETEER_EXECUTABLE_PATH,
         args: [
             "--no-sandbox",
             "--disable-setuid-sandbox",
@@ -263,3 +263,10 @@ Por favor selecciona una opción escribiendo:
 // INICIAR BOT
 // ===============================
 client.initialize();
+
+// ===============================
+// EXPRESS PARA RENDER (PORT BINDING)
+// ===============================
+const app = express();
+app.get("/", (req, res) => res.send("BotQR running"));
+app.listen(process.env.PORT || 3000);
