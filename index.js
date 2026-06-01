@@ -13,7 +13,7 @@ if (fs.existsSync(SESSION_FILE_PATH)) {
 const client = new Client({
     session: sessionData,
     puppeteer: {
-        executablePath: puppeteer.executablePath(), // usa el Chromium descargado
+        executablePath: "/opt/render/.cache/puppeteer/chrome/linux-146.0.7680.31/chrome-linux64/chrome",
         headless: true,
         args: [
             "--no-sandbox",
@@ -26,7 +26,6 @@ const client = new Client({
         ]
     }
 });
-
 
 // ===============================
 // ESTADOS DE USUARIOS
