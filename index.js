@@ -1,25 +1,19 @@
-const puppeteer = require("puppeteer"); // Importa puppeteer completo
-const { Client } = require("whatsapp-web.js");
-const qrcode = require("qrcode-terminal");
-const fs = require("fs");
-const express = require("express");
+const puppeteer = require('puppeteer'); // importa puppeteer completo
+const { Client } = require('whatsapp-web.js');
+const qrcode = require('qrcode-terminal');
+const fs = require('fs');
+const express = require('express');
 
-// ===============================
-// ARCHIVO DE SESIÓN EN DISCO PERSISTENTE
-// ===============================
 const SESSION_FILE_PATH = "/data/session.json";
 let sessionData;
 if (fs.existsSync(SESSION_FILE_PATH)) {
     sessionData = require(SESSION_FILE_PATH);
 }
 
-// ===============================
-// CLIENTE WHATSAPP
-// ===============================
 const client = new Client({
     session: sessionData,
     puppeteer: {
-        executablePath: puppeteer.executablePath(), // Usa el Chromium descargado por puppeteer
+        executablePath: puppeteer.executablePath(), // usa el Chromium descargado
         headless: true,
         args: [
             "--no-sandbox",
@@ -32,6 +26,7 @@ const client = new Client({
         ]
     }
 });
+
 
 // ===============================
 // ESTADOS DE USUARIOS
@@ -79,6 +74,9 @@ client.on("message", async (message) => {
         let respuesta = "";
         const estado = usuarios[from].estado;
 
+        // ===============================
+        // REACTIVAR BOT
+        // ===============================
         if (texto === ".bot" || texto === "volver al menu") {
             usuarios[from].estado = "menu";
             await client.sendMessage(from, `🤖 Asistente Virtual Reactivado
@@ -87,8 +85,14 @@ Escribe "hola" para desplegar el menú de opciones.`);
             return;
         }
 
+        // ===============================
+        // ESTADO HUMANO
+        // ===============================
         if (estado === "humano") return;
 
+        // ===============================
+        // MENÚ INICIAL
+        // ===============================
         if (
             estado === "inicio" ||
             texto.includes("hola") ||
@@ -109,28 +113,48 @@ Coméntame cómo puedo ayudarte hoy
 2️⃣ Necesito un paquete de videos publicitarios para mi negocio
 
 3️⃣ Necesito conversar personalmente con un asesor para promocionar y hacer crecer mi negocio`;
-        } else if (estado === "menu" && texto === "1") {
+        }
+
+        // ===============================
+        // OPCIÓN 1
+        // ===============================
+        else if (estado === "menu" && texto === "1") {
             usuarios[from].estado = "opcion1_paso1";
             respuesta = `Cuéntame un poquito de tu marca o negocio 🤍
 
 ¿Qué te gustaría impulsar en TikTok o Instagram?
 
 Me encantaría conocerte y ver cómo podemos hacer que más personas descubran lo que haces 🚀`;
-        } else if (estado === "menu" && texto === "2") {
+        }
+
+        // ===============================
+        // OPCIÓN 2
+        // ===============================
+        else if (estado === "menu" && texto === "2") {
             usuarios[from].estado = "opcion2_paso1";
             respuesta = `Cuéntame un poquito de tu marca o negocio 🤍
 
 ¿Qué te gustaría impulsar en TikTok o Instagram?
 
 Me encantaría conocerte y ver cómo podemos hacer que más personas descubran lo que haces 🚀`;
-        } else if (estado === "menu" && texto === "3") {
+        }
+
+        // ===============================
+        // OPCIÓN 3
+        // ===============================
+        else if (estado === "menu" && texto === "3") {
             usuarios[from].estado = "finalizado";
             respuesta = `Increíble ! 🙌🏼
 
 En pocos minutos un asesor se pondrá en contacto contigo, o si prefieres y necesitas información inmediata puedes llamar sin problema a este número 😊📞📲
 
 Escribe "finalizar" para continuar con un asesor.`;
-        } else if (estado === "opcion1_paso1") {
+        }
+
+        // ===============================
+        // OPCIÓN 1 PASO 1
+        // ===============================
+        else if (estado === "opcion1_paso1") {
             usuarios[from].estado = "opcion1_paso2";
             usuarios[from].infoNegocio = texto;
             respuesta = `¡Qué emocionante! 😍
@@ -145,7 +169,12 @@ Para poder recomendarte la mejor estrategia, cuéntame un poquito más 👀👇
 • ¿Te interesa TikTok, Instagram o ambas plataformas?
 
 Con eso ya puedo orientarte mucho mejor 🤍`;
-        } else if (estado === "opcion1_paso2") {
+        }
+
+        // ===============================
+        // OPCIÓN 1 PASO 2
+        // ===============================
+        else if (estado === "opcion1_paso2") {
             if (texto === "listo" || texto === "terminar") {
                 usuarios[from].estado = "finalizado";
                 respuesta = `¡Súper! ✨ Gracias por contarme más sobre tu negocio 🤍
@@ -166,7 +195,12 @@ Si ya terminaste escribe:
 
 "listo"`;
             }
-        } else if (estado === "opcion2_paso1") {
+        }
+
+        // ===============================
+        // OPCIÓN 2 FINAL
+        // ===============================
+        else if (estado === "opcion2_paso1") {
             usuarios[from].estado = "finalizado";
             respuesta = `¡Súper! ✨ Gracias por contarme más sobre tu negocio 🤍
 
@@ -177,7 +211,12 @@ En un momento te voy a compartir toda la información sobre paquetes, métricas 
 Estoy segura de que podemos hacer contenido súper viral para tu marca 🚀
 
 Escribe "finalizar" para terminar y te atenderá directamente una persona real 📲`;
-        } else if (estado === "finalizado") {
+        }
+
+        // ===============================
+        // FINALIZACIÓN
+        // ===============================
+        else if (estado === "finalizado") {
             if (texto === "finalizar") {
                 usuarios[from].estado = "humano";
                 respuesta = `✅ Perfecto, gracias por su paciencia.
@@ -192,7 +231,12 @@ Por favor escribe:
 
 "finalizar"`;
             }
-        } else {
+        }
+
+        // ===============================
+        // NO ENTENDIDO
+        // ===============================
+        else {
             respuesta = `💖 Perdón, no logré entender tu mensaje.
 
 Por favor selecciona una opción escribiendo:
