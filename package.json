@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  "start": "node index.js",
-  "postinstall": "npx puppeteer browsers install chrome@146.0.7680.31"
+  "start": "node index.js"
   },
   "dependencies": {
   "puppeteer": "21.6.1",
