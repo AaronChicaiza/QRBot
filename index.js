@@ -13,7 +13,7 @@ if (fs.existsSync(SESSION_FILE_PATH)) {
 const client = new Client({
     session: sessionData,
     puppeteer: {
-        executablePath: "/usr/bin/google-chrome",
+        executablePath: puppeteer.executablePath(), // usa el Chromium que Puppeteer descargó,
         headless: true,
         args: [
             "--no-sandbox",
