@@ -10,21 +10,23 @@ if (fs.existsSync(SESSION_FILE_PATH)) {
     sessionData = require(SESSION_FILE_PATH);
 }
 
+const puppeteer = require("puppeteer");
+
 const client = new Client({
-    session: sessionData,
-    puppeteer: {
-        executablePath: "/usr/bin/google-chrome",
-        headless: true,
-        args: [
-            "--no-sandbox",
-            "--disable-setuid-sandbox",
-            "--disable-dev-shm-usage",
-            "--disable-gpu",
-            "--no-first-run",
-            "--no-zygote",
-            "--single-process"
-        ]
-    }
+  session: sessionData,
+  puppeteer: {
+    executablePath: puppeteer.executablePath(), // usa el Chromium que Puppeteer descargó
+    headless: true,
+    args: [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage",
+      "--disable-gpu",
+      "--no-first-run",
+      "--no-zygote",
+      "--single-process"
+    ]
+  }
 });
 
 // ===============================
