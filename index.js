@@ -12,7 +12,7 @@ if (fs.existsSync(SESSION_FILE_PATH)) {
 const puppeteer = require("puppeteer");
 
 const client = new Client({
-  qrMaxRetries: 2,
+  authStrategy: new LocalAuth(),
   puppeteer: {
     headless: true,
     args: ["--no-sandbox","--disable-setuid-sandbox"]
