@@ -222,7 +222,7 @@ A partir de este momento te atenderá una persona real 📲`;
 
 Por favor escribe:
 
-"finalizar"`;
+"Finalizar"`;
             }
         }
 
