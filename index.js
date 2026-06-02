@@ -1,4 +1,4 @@
-const { Client } = require('whatsapp-web.js');
+const { Client, LocalAuth } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 const fs = require('fs');
 const express = require('express');
@@ -12,13 +12,12 @@ if (fs.existsSync(SESSION_FILE_PATH)) {
 const puppeteer = require("puppeteer");
 
 const client = new Client({
-  session: sessionData,
+  authStrategy: new LocalAuth(), // usa la carpeta por defecto .wwebjs_auth dentro del contenedor
   puppeteer: {
     headless: true,
-    args: ["--no-sandbox","--disable-setuid-sandbox"]
+    args: ["--no-sandbox", "--disable-setuid-sandbox"]
   }
 });
-
 
 // ===============================
 // ESTADOS DE USUARIOS
