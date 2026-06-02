@@ -14,19 +14,12 @@ const puppeteer = require("puppeteer");
 const client = new Client({
   session: sessionData,
   puppeteer: {
-    executablePath: puppeteer.executablePath(), // usa el Chromium que Puppeteer descargó
+    executablePath: "/opt/render/.cache/puppeteer/chrome/linux-119.0.6045.105/chrome-linux64/chrome",
     headless: true,
-    args: [
-      "--no-sandbox",
-      "--disable-setuid-sandbox",
-      "--disable-dev-shm-usage",
-      "--disable-gpu",
-      "--no-first-run",
-      "--no-zygote",
-      "--single-process"
-    ]
+    args: ["--no-sandbox","--disable-setuid-sandbox"]
   }
 });
+
 
 // ===============================
 // ESTADOS DE USUARIOS
