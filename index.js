@@ -203,7 +203,7 @@ En un momento te voy a compartir toda la información sobre paquetes, métricas 
 
 Estoy segura de que podemos hacer contenido súper viral para tu marca 🚀
 
-Escribe "finalizar" para terminar y te atenderá directamente una persona real 📲`;
+Escribe "Finalizar" para terminar y te atenderá directamente una persona real 📲`;
         }
 
         // ===============================
