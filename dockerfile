@@ -21,6 +21,8 @@ RUN apt-get update && apt-get install -y \
     libxdamage1 \
     libxrandr2 \
     xdg-utils \
+    curl \
+    apt-transport-https \
     && rm -rf /var/lib/apt/lists/*
 
 # Instalar Google Chrome estable desde .deb

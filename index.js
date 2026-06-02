@@ -14,7 +14,7 @@ const puppeteer = require("puppeteer");
 const client = new Client({
   session: sessionData,
   puppeteer: {
-    executablePath: "/opt/render/.cache/puppeteer/chrome/linux-119.0.6045.105/chrome-linux64/chrome",
+    executablePath: "/usr/bin/google-chrome-stable",
     headless: true,
     args: ["--no-sandbox","--disable-setuid-sandbox"]
   }
