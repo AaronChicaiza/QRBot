@@ -1,4 +1,3 @@
-const puppeteer = require('puppeteer'); // importa puppeteer completo
 const { Client } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 const fs = require('fs');
