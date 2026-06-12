@@ -1,0 +1,120 @@
+[0602/141019.880:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Feature xr-spatial-tracking's parameters are ignored.", source:  (0)
+[0602/141019.880:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'attribution-reporting'.", source:  (0)
+[0602/141019.882:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'compute-pressure'.", source:  (0)
+[0602/141019.882:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.", source:  (0)
+[0602/141019.882:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'private-state-token-issuance'.", source:  (0)
+[0602/141019.882:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'shared-storage'.", source:  (0)
+[0602/141019.882:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'.", source:  (0)
+[0602/141019.882:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'private-state-token-redemption'.", source:  (0)
+[0602/141019.882:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'unload'.", source:  (0)
+[0602/141019.882:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'window-management'.", source:  (0)
+[0602/141019.882:INFO:CONSOLE(0)] "Document-Policy HTTP header: Unrecognized document policy feature name include-js-call-stacks-in-crash-reports.", source: https://web.whatsapp.com/ (0)
+[0602/141032.397:INFO:CONSOLE(79)] "ErrorUtils caught an error:
+
+[storage] storage bucket persistence denied (aquire-persistent-storage-denied)
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/yK/r/GdpyBJ3A7sG.js (79)
+[0602/141038.918:INFO:CONSOLE(237)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yt/r/FN7jY9AwKy1.js (237)
+[0602/141043.258:ERROR:gl_utils.cc(319)] [.WebGL-0000508000B10D00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[0602/141043.301:ERROR:gl_utils.cc(319)] [.WebGL-000050800A300000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[0602/141043.329:ERROR:gl_utils.cc(319)] [.WebGL-000050800A303800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[0602/141043.359:INFO:CONSOLE(0)] "[.WebGL-0000508000B10D00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels", source: https://web.whatsapp.com/ (0)
+[0602/141043.360:INFO:CONSOLE(0)] "[.WebGL-000050800A300000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels", source: https://web.whatsapp.com/ (0)
+[0602/141043.360:INFO:CONSOLE(0)] "[.WebGL-000050800A303800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels", source: https://web.whatsapp.com/ (0)
+[0602/141043.386:ERROR:gl_utils.cc(319)] [.WebGL-000050800A419B00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
+[0602/141043.401:INFO:CONSOLE(0)] "[.WebGL-000050800A419B00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)", source: https://web.whatsapp.com/ (0)
+[0602/141051.104:INFO:CONSOLE(139)] "The PerformanceObserver does not support buffered flag with the entryTypes argument.", source: https://static.whatsapp.net/rsrc.php/v4/yq/r/krlqLG2BLyzKX_-FwaG3N4FjluiEILWtl0E6cBLyx6_bak53a1NKsQezF1XHlgTC-Li4LayP_ogKivb4ZvCT0qWkYex4r2zPxIaQzBC8_AezoLe0qnL2dG90HfibXh0vdaWGD3sMMaP-mao.js (139)
+[0602/141101.364:INFO:CONSOLE(25212)] "[Report Only] Refused to compile or instantiate WebAssembly module because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src blob: 'self' 'nonce-UqqEXiVW' 'report-sample' https://static.whatsapp.net https://*.youtube.com https://maps.googleapis.com https://maps.gstatic.com https://lens.google.com/upload".
+", source: https://static.whatsapp.net/rsrc.php/v4/yr/r/p48CUUqM9-9.js (25212)
+[0602/141107.085:INFO:CONSOLE(25212)] "[Report Only] Refused to compile or instantiate WebAssembly module because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src blob: 'self' 'nonce-UqqEXiVW' 'report-sample' https://static.whatsapp.net https://*.youtube.com https://maps.googleapis.com https://maps.gstatic.com https://lens.google.com/upload".
+", source: https://static.whatsapp.net/rsrc.php/v4/yr/r/p48CUUqM9-9.js (25212)
+[0602/141107.337:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Feature xr-spatial-tracking's parameters are ignored.", source:  (0)
+[0602/141107.337:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'attribution-reporting'.", source:  (0)
+[0602/141107.337:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'compute-pressure'.", source:  (0)
+[0602/141107.337:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.", source:  (0)
+[0602/141107.337:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'private-state-token-issuance'.", source:  (0)
+[0602/141107.337:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'shared-storage'.", source:  (0)
+[0602/141107.337:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'.", source:  (0)
+[0602/141107.337:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'private-state-token-redemption'.", source:  (0)
+[0602/141107.337:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'unload'.", source:  (0)
+[0602/141107.337:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'window-management'.", source:  (0)
+[0602/141107.337:INFO:CONSOLE(0)] "Document-Policy HTTP header: Unrecognized document policy feature name include-js-call-stacks-in-crash-reports.", source: https://webtp.whatsapp.net/pdf-viewer/?locale=es_LA (0)
+[0602/141107.345:INFO:CONSOLE(1)] "Refused to load the image 'https://static.whatsapp.net/rsrc.php/yd/r/PfkSLByWV8O.webp' because it violates the following Content Security Policy directive: "img-src 'self' blob:".
+", source: https://webtp.whatsapp.net/pdf-viewer/?locale=es_LA (1)
+[0602/141107.345:INFO:CONSOLE(1)] "Refused to load the image 'https://static.whatsapp.net/rsrc.php/yI/r/EoOh62-jiPS.webp' because it violates the following Content Security Policy directive: "img-src 'self' blob:".
+", source: https://webtp.whatsapp.net/pdf-viewer/?locale=es_LA (1)
+[0602/141108.473:INFO:CONSOLE(79)] "ErrorUtils caught an error:
+
+Requiring unknown module "WAPhoneUtils"
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/yK/r/GdpyBJ3A7sG.js (79)
+[0602/141108.480:INFO:CONSOLE(79)] "ErrorUtils caught an error:
+
+Requiring unknown module "WAWebNewsletterToggleMuteStateJob"
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/yK/r/GdpyBJ3A7sG.js (79)
+[0602/141108.483:INFO:CONSOLE(79)] "ErrorUtils caught an error:
+
+Requiring unknown module "WAWebMexFetchNewsletterSubscribersJob"
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/yK/r/GdpyBJ3A7sG.js (79)
+[0602/141108.486:INFO:CONSOLE(79)] "ErrorUtils caught an error:
+
+Requiring unknown module "WAPhoneUtils"
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/yK/r/GdpyBJ3A7sG.js (79)
+[0602/141108.487:INFO:CONSOLE(79)] "ErrorUtils caught an error:
+
+Requiring unknown module "WAWebNewsletterToggleMuteStateJob"
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/yK/r/GdpyBJ3A7sG.js (79)
+[0602/141108.488:INFO:CONSOLE(79)] "ErrorUtils caught an error:
+
+Requiring unknown module "WAWebMexFetchNewsletterSubscribersJob"
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/yK/r/GdpyBJ3A7sG.js (79)
+[0602/141108.490:INFO:CONSOLE(79)] "ErrorUtils caught an error:
+
+Requiring unknown module "WAPhoneUtils"
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/yK/r/GdpyBJ3A7sG.js (79)
+[0602/141108.492:INFO:CONSOLE(79)] "ErrorUtils caught an error:
+
+Requiring unknown module "WAWebNewsletterToggleMuteStateJob"
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/yK/r/GdpyBJ3A7sG.js (79)
+[0602/141108.494:INFO:CONSOLE(79)] "ErrorUtils caught an error:
+
+Requiring unknown module "WAWebMexFetchNewsletterSubscribersJob"
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/yK/r/GdpyBJ3A7sG.js (79)
+[0602/141108.496:INFO:CONSOLE(79)] "ErrorUtils caught an error:
+
+Requiring unknown module "WAPhoneUtils"
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/yK/r/GdpyBJ3A7sG.js (79)
+[0602/141108.500:INFO:CONSOLE(79)] "ErrorUtils caught an error:
+
+Requiring unknown module "WAWebNewsletterToggleMuteStateJob"
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/yK/r/GdpyBJ3A7sG.js (79)
+[0602/141108.502:INFO:CONSOLE(79)] "ErrorUtils caught an error:
+
+Requiring unknown module "WAWebMexFetchNewsletterSubscribersJob"
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/yK/r/GdpyBJ3A7sG.js (79)
+[0602/141108.503:INFO:CONSOLE(79)] "ErrorUtils caught an error:
+
+Requiring unknown module "WAPhoneUtils"
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/yK/r/GdpyBJ3A7sG.js (79)
+[0602/141108.504:INFO:CONSOLE(79)] "ErrorUtils caught an error:
+
+Requiring unknown module "WAWebNewsletterToggleMuteStateJob"
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/yK/r/GdpyBJ3A7sG.js (79)
+[0602/141108.506:INFO:CONSOLE(79)] "ErrorUtils caught an error:
+
+Requiring unknown module "WAWebMexFetchNewsletterSubscribersJob"
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/yK/r/GdpyBJ3A7sG.js (79)
